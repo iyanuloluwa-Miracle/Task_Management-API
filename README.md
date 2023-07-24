@@ -1,5 +1,53 @@
 # Task-Management-API DOCUMENTATION
 
+## Installation Instructions
+
+### Node.js Installation
+
+Before you can run this project, you'll need to install Node.js. You can download the latest version of Node.js from the official website: https://nodejs.org/
+
+* For Windows: Download the installer and follow the installation wizard to set up Node.js.
+
+* For macOS: Download the macOS Installer and follow the installation instructions.
+
+* For Linux: You can use your package manager to install Node.js. For example, on Ubuntu, you can use:
+
+```
+sudo apt-get update
+sudo apt-get install nodejs
+```
+### Project Setup
+
+* Clone the repository:
+
+```
+git clone [repository_url]
+```
+
+### Project setup
+
+* Change into the project directory:
+  
+```
+cd [project_directory]
+```
+
+* Install project dependencies:
+  
+```
+npm install
+```
+
+### Running the project
+
+* To start the development server, run
+```  
+npm start
+```
+* The application will be available at `http://localhost:3000`.
+
+
+
 # Introduction
 
 The Task Management API allows you to manage tasks with the ability to create, read, update, and delete tasks. The API also provides functionalities for bulk operations.
