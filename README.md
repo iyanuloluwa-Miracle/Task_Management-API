@@ -149,7 +149,7 @@ Request:
     "assigned_user": "User B",
     "completed": true
   }
-  // More tasks...
+  
 ]
 
 ```
@@ -169,7 +169,7 @@ Response:
     "assigned_user": "User B",
     "completed": true
   }
-  // More tasks...
+  More tasks...
 ]
 
 ```
