@@ -135,3 +135,75 @@ Response:
 Creates multiple tasks in a single request.
 
 Request:
+
+```json
+
+[
+  {
+    "title": "Task 1",
+    "assigned_user": "User A",
+    "completed": false
+  },
+  {
+    "title": "Task 2",
+    "assigned_user": "User B",
+    "completed": true
+  }
+  // More tasks...
+]
+
+```
+
+Response:
+
+```json
+
+[
+  {
+    "title": "Task 1",
+    "assigned_user": "User A",
+    "completed": false
+  },
+  {
+    "title": "Task 2",
+    "assigned_user": "User B",
+    "completed": true
+  }
+  // More tasks...
+]
+
+```
+
+#### Bulk Delete Tasks
+#### Endpoint: DELETE /tasks/bulk
+
+Deletes multiple tasks in a single request.
+
+Request:
+
+```json
+
+{
+  "taskIds": [1, 2, 3]
+}
+
+```
+
+Response:
+
+```json
+
+{
+  "message": "Tasks deleted successfully"
+}
+
+```
+
+## Error Responses
+
+In case of errors, the API will return appropriate error responses with status codes and error messages. The common status codes used are:
+
+* `400 Bad Request:` Invalid or missing parameters in the request.
+* `401 Unauthorized:` Authentication failure or missing token.
+* `404 Not Found:` Resource not found.
+* `500 Internal Server Error:` Server-side error.
