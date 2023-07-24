@@ -26,3 +26,112 @@ Request Body:
 }
 
 ```
+
+Response Body:
+
+```json
+{
+  "id": 1,
+  "title": "Task Title",
+  "assigned_user": "User Name",
+  "completed": false
+}
+
+```
+
+#### List All Tasks
+#### Endpoint: GET /tasks
+
+Retrieves a list of all tasks in the system.
+
+Response:
+
+
+```json
+[
+  {
+    "id": 1,
+    "title": "Task 1",
+    "assigned_user": "User A",
+    "completed": true
+  },
+  {
+    "id": 2,
+    "title": "Task 2",
+    "assigned_user": "User B",
+    "completed": false
+  }
+  // More tasks...
+]
+
+```
+
+### Get a Specific Task
+#### Endpoint: GET /tasks/:id
+
+Retrieves a specific task by its ID.
+
+Response:
+
+
+```json
+{
+  "id": 1,
+  "title": "Task Title",
+  "assigned_user": "User Name",
+  "completed": false
+}
+
+```
+
+### Update a Task
+### Endpoint: PUT /tasks/:id
+
+#### Updates the title or completion status of a specific task.
+
+Request:
+
+
+```json
+{
+  "title": "Updated Task Title",
+  "completed": true
+}
+
+```
+
+Response:
+
+```json
+{
+  "title": "Updated Task Title",
+  "completed": true
+}
+
+```
+
+
+### Delete a Task
+### Endpoint: DELETE /tasks/:id
+
+Deletes a specific task by its ID.
+
+Response:
+
+
+```json
+
+{
+  "message": "Task deleted successfully"
+}
+
+```
+
+## Bulk Operations
+
+### Bulk Add Tasks
+### Endpoint: POST /tasks/bulk
+
+Creates multiple tasks in a single request.
+
+Request:
