@@ -5,10 +5,10 @@ const user = process.env.user
 
 
 const dbConfig = {
-    host: 'localhost',
+    host: 'bwlgoc2pcnb4cp2l2bfo-mysql.services.clever-cloud.com',
     user: user,
     password: password,
-    database: 'task_management',
+    database: 'bwlgoc2pcnb4cp2l2bfo',
 };
 
 
